@@ -1,0 +1,5 @@
+%ul.index
+  %li
+    .tab= link_to_if page_classes != 'index', 'Top', '/'
+  %li
+    .tab= link_to_if page_classes != 'about', 'About', 'about.html'
