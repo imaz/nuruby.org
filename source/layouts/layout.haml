@@ -8,5 +8,13 @@
     = stylesheet_link_tag 'normalize', 'all'
     = javascript_include_tag 'all'
 
-  %body{:class => page_classes}
-    = yield
+  %body
+    .container
+      .header
+        %ul.index
+          %li= link_to 'Top', '/'
+          %li= link_to 'About', 'about.html'
+      .content
+        = yield
+      .footer
+

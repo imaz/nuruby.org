@@ -6,30 +6,42 @@ body
   text-align: center
   font-family: 'Gloria Hallelujah', cursive
 
-h1
-  color: rgba(0, 0, 0, 0.3)
-  font-weight: bold
-  font-size: 32px
-  letter-spacing: -1px
-  text-transform: uppercase
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
-  background: url("../images/nu.png") no-repeat center 100px
-  padding: 350px 0 10px
-  margin: 0
+$container-width: 300px
+.container
+  width: $container-width
+  margin: 0 auto
 
-.doc
-  font-size: 14px
+.header
+  ul.index
+    overflow: hidden
+    margin: 0
+    padding: 0 10px
+    background-color: rgba(255, 0, 0, 0.1)
+    font-size: 14px
+    text-align: center
+    li
+      float: left
+      list-style: none
+      a
+        margin: 0 1px
+        padding: 0 20px
+        color: rgba(0, 0, 0, 0.4)
+        background-color: rgba(255, 0, 0, 0.2)
+        text-decoration: none
+        &:hover
+          color: rgba(0, 0, 0, 0.6)
+          background-color: rgba(255, 255, 255, 0.3)
+
+h1
+  color: rgba(0, 0, 0, 0.4)
+  font-weight: bold
+  font-size: 24px
+  letter-spacing: -1px
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
+  background: url("../images/nu.png") no-repeat center 60px
+  background-size: 100px 100px
+  padding: 200px 0 10px
   margin: 0
-  &:before, &:after
-    opacity: .2
-    padding: 6px
-    font-style: normal
-    position: relative
-    content: "•"
-  a
-    color: rgba(0, 0, 0, 0.3)
-    &:hover
-      color: #666
 
 .welcome
   -webkit-animation-name: welcome
@@ -51,10 +63,8 @@ h1
 
 .nuruby
   ul
-    margin: 0 auto
-    width: 250px
     text-align: left
     li
-      list-style-type: georgian
+      list-style: georgian
       ul li
-        list-style-type: hebrew
+        list-style: hebrew
