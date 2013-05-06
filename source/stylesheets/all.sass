@@ -1,53 +1,8 @@
 @charset 'UTF-8'
 @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah)
 
-body
-  background: #efcacd
-  text-align: center
-  font-family: 'Gloria Hallelujah', cursive
-
-$container-width: 300px
-.container
-  width: $container-width
-  margin: 0 auto
-
-.header
-  ul.index
-    overflow: hidden
-    margin: 0
-    padding: 0 10px
-    background-color: rgba(255, 0, 0, 0.1)
-    font-size: 14px
-    text-align: center
-    li
-      float: left
-      list-style: none
-      a
-        margin: 0 1px
-        padding: 0 20px
-        color: rgba(0, 0, 0, 0.4)
-        background-color: rgba(255, 0, 0, 0.2)
-        text-decoration: none
-        &:hover
-          color: rgba(0, 0, 0, 0.6)
-          background-color: rgba(255, 255, 255, 0.3)
-
-h1
-  color: rgba(0, 0, 0, 0.4)
-  font-weight: bold
-  font-size: 24px
-  letter-spacing: -1px
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
-  background: url("../images/nu.png") no-repeat center 60px
-  background-size: 100px 100px
-  padding: 200px 0 10px
-  margin: 0
-
-.welcome
-  -webkit-animation-name: welcome
-  -webkit-animation-duration: .9s
-
-@-webkit-keyframes welcome
+// ミュイン
+@-webkit-keyframes myuin
   from
     -webkit-transform: scale(0)
     opacity: 0
@@ -61,10 +16,61 @@ h1
   to
     -webkit-transform: scale(1)
 
-.nuruby
-  ul
-    text-align: left
-    li
-      list-style: georgian
-      ul li
-        list-style: hebrew
+body
+  background: #efcacd
+  text-align: center
+  font-family: 'Gloria Hallelujah', cursive
+
+$container-width: 300px
+.container
+  margin: 0 auto
+  width: $container-width
+  border: 1px solid rgba(255,0,0,0.8)
+
+  .header
+    ul.index
+      overflow: hidden
+      margin: 0
+      padding: 0 10px
+      background-color: rgba(255, 0, 0, 0.1)
+      font-size: 14px
+      text-align: center
+      li
+        float: left
+        list-style: none
+        a
+          margin: 0 1px
+          padding: 0 20px
+          color: rgba(0, 0, 0, 0.4)
+          background-color: rgba(255, 0, 0, 0.2)
+          text-decoration: none
+          &:hover
+            color: rgba(0, 0, 0, 0.6)
+            background-color: rgba(255, 255, 255, 0.3)
+  .footer
+    background-color: rgba(255, 0, 0, 0.1)
+    font-size: 13px
+
+  .contents
+    h1
+      color: rgba(0, 0, 0, 0.4)
+      font-weight: bold
+      font-size: 24px
+      letter-spacing: -1px
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6)
+      background: url("../images/nu.png") no-repeat center 60px
+      background-size: 100px 100px
+      padding: 200px 0 10px
+      margin: 0
+
+    .welcome
+      -webkit-animation-name: myuin
+      -webkit-animation-duration: .9s
+
+    .nuruby
+      ul
+        text-align: left
+        li
+          list-style: georgian
+          ul li
+            list-style: hebrew
