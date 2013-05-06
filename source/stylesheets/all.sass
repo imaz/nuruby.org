@@ -31,22 +31,25 @@ $container-width: 300px
     ul.index
       overflow: hidden
       margin: 0
-      padding: 0 10px
+      padding: 0 8px
       background-color: rgba(255, 0, 0, 0.1)
       font-size: 14px
       text-align: center
       li
         float: left
         list-style: none
-        a
-          margin: 0 1px
-          padding: 0 20px
-          color: rgba(0, 0, 0, 0.4)
-          background-color: rgba(255, 0, 0, 0.2)
-          text-decoration: none
-          &:hover
-            color: rgba(0, 0, 0, 0.6)
-            background-color: rgba(255, 255, 255, 0.3)
+        padding: 5px 0 0
+        .tab
+          width: 80px
+          background-color: rgba(255, 255, 255, 0.5)
+          a
+            display: block
+            color: rgba(0, 0, 0, 0.4)
+            background-color: rgba(255, 0, 0, 0.4)
+            text-decoration: none
+            &:hover
+              color: rgba(0, 0, 0, 0.6)
+              background-color: rgba(255, 0, 0, 0.2)
   .footer
     background-color: rgba(255, 0, 0, 0.1)
     font-size: 13px

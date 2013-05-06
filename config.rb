@@ -47,6 +47,12 @@
 #   end
 # end
 
+helpers do
+  def link_to_if(condition, name, url)
+    condition ? link_to(name, url) : name
+  end
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
