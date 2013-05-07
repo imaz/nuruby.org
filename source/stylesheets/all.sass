@@ -29,14 +29,23 @@ $container-width: 300px
     ul.index
       overflow: hidden
       margin: 0
-      padding: 0 8px
       background-color: rgba(255, 0, 0, 0.1)
+      padding: 0
       font-size: 14px
       text-align: center
       li
         float: left
         list-style: none
         padding: 5px 0 0
+        .home
+          img
+            margin: 0 4px
+            height: 24px
+            opacity: 0.5
+            vertical-align: sub
+            &:hover
+              opacity: 1
+              shadow: 1px
         .tab
           width: 80px
           background-color: rgba(255, 255, 255, 0.5)
