@@ -16,14 +16,16 @@
   to
     -webkit-transform: scale(1)
 
+$container-bgcolor: #ffeaed
+$contents-bgcolor: $container-bgcolor
 $container-width: 300px
 .container
-  background: #ffeaed
+  background: $container-bgcolor
   text-align: center
   font-family: 'Gloria Hallelujah', cursive
   margin: 0 auto
   width: $container-width
-  border: 1px solid rgba(255,0,0,0.8)
+  border: 1px solid rgba(255, 0, 0, 0.8)
 
   .header
     ul.index
@@ -48,7 +50,7 @@ $container-width: 300px
               shadow: 1px
         .tab
           width: 80px
-          background-color: rgba(255, 255, 255, 0.5)
+          background-color: $contents-bgcolor
           color: rgba(0, 0, 0, 0.6)
           a
             display: block
