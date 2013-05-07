@@ -3,6 +3,14 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+    %meta(name='description' content='ぬRuby')
+    %meta(name='keywords'    content='ぬRuby')
+    %meta(property='og:title'     content='ぬRuby')
+    %meta(property='og:site_name' content='ぬRuby')
+    %meta(property='og:url'       content='http://nuruby.org')
+    %meta(property='og:type'      content='activity')
+    %meta(property='og:image'     content="http://nuruby.org/images/nu.jpg")
+
     %title= data.page.title || 'ぬRuby'
     = favicon_tag 'favicon.ico'
     = stylesheet_link_tag 'normalize', 'all'
