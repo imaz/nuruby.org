@@ -1,26 +1,47 @@
 @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
-@-webkit-keyframes myuin {
+@-moz-keyframes myuin {
   /* line 6, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   from {
-    -webkit-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   /* line 9, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   50% {
-    -webkit-transform: scale(0);
+    transform: scale(0);
     opacity: 0; }
 
   /* line 12, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  82.5% {
+    transform: scale(1.03);
+    animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 16, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  to {
+    transform: scale(1); } }
+
+@-webkit-keyframes myuin {
+  /* line 20, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 23, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  50% {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 26, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   82.5% {
     -webkit-transform: scale(1.03);
     -webkit-animation-timing-function: ease-out;
     opacity: 1; }
 
-  /* line 16, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  /* line 30, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   to {
     -webkit-transform: scale(1); } }
 
-/* line 22, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+/* line 36, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
 .container {
   background: #ffeaed;
   text-align: center;
@@ -28,7 +49,7 @@
   margin: 0 auto;
   width: 300px;
   border: 1px solid rgba(255, 0, 0, 0.8); }
-  /* line 31, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  /* line 45, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   .container .header ul.index {
     overflow: hidden;
     margin: 0;
@@ -36,43 +57,43 @@
     background-color: rgba(255, 0, 0, 0.2);
     font-size: 14px;
     text-align: center; }
-    /* line 38, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+    /* line 52, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
     .container .header ul.index li {
       float: left;
       list-style: none;
       padding: 5px 0 0; }
-      /* line 43, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+      /* line 57, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
       .container .header ul.index li .home img {
         margin: 0 4px;
         height: 24px;
         opacity: 0.5;
         vertical-align: sub; }
-        /* line 48, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+        /* line 62, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
         .container .header ul.index li .home img:hover {
           opacity: 1;
           shadow: 1px; }
-      /* line 51, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+      /* line 65, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
       .container .header ul.index li .tab {
         width: 80px;
         background-color: #ffeaed;
         color: rgba(0, 0, 0, 0.6); }
-        /* line 55, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+        /* line 69, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
         .container .header ul.index li .tab a {
           display: block;
           color: rgba(0, 0, 0, 0.6);
           background-color: rgba(255, 0, 0, 0.3);
           text-decoration: none; }
-          /* line 60, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+          /* line 74, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
           .container .header ul.index li .tab a:hover {
             color: rgba(0, 0, 0, 0.7);
             background-color: rgba(255, 0, 0, 0.5); }
-  /* line 63, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  /* line 77, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   .container .footer {
     margin-top: 20px;
     padding: 4px;
     background-color: rgba(255, 0, 0, 0.2);
     font-size: 13px; }
-  /* line 70, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  /* line 84, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   .container .contents h1 {
     color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
@@ -83,21 +104,23 @@
     background-size: 100px 100px;
     margin: 0;
     padding: 200px 0 10px; }
-  /* line 81, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  /* line 95, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   .container .contents h2 {
     font-weight: bold;
     font-size: 20px;
     color: rgba(255, 63, 63, 0.8); }
-  /* line 86, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+  /* line 100, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   .container .contents .welcome {
     -webkit-animation-name: myuin;
-    -webkit-animation-duration: 0.9s; }
-  /* line 91, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+    -webkit-animation-duration: 0.9s;
+    -moz-animation-name: myuin;
+    -moz-animation-duration: 0.9s; }
+  /* line 107, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
   .container .contents .nuruby ul {
     text-align: left; }
-    /* line 93, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+    /* line 109, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
     .container .contents .nuruby ul li {
       list-style: georgian; }
-      /* line 95, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
+      /* line 111, /Users/imaz/work/nuruby/nuruby.org/source/stylesheets/all.sass */
       .container .contents .nuruby ul li ul li {
         list-style: hebrew; }
