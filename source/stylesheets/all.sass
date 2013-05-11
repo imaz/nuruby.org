@@ -2,6 +2,20 @@
 @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah)
 
 // ミュイン
+@-moz-keyframes myuin
+  from
+    transform: scale(0)
+    opacity: 0
+  50%
+    transform: scale(0)
+    opacity: 0
+  82.5%
+    transform: scale(1.03)
+    animation-timing-function: ease-out
+    opacity: 1
+  to
+    transform: scale(1)
+
 @-webkit-keyframes myuin
   from
     -webkit-transform: scale(0)
@@ -86,6 +100,8 @@ $container-width: 300px
     .welcome
       -webkit-animation-name: myuin
       -webkit-animation-duration: .9s
+      -moz-animation-name: myuin
+      -moz-animation-duration: .9s
 
     .nuruby
       ul
